@@ -2,6 +2,7 @@ package hu.horvath.kotlintest.features.inmemorydbtest
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RestController
 import java.math.BigDecimal
@@ -21,7 +22,7 @@ class CoffeeController {
     }
 
     @GetMapping("/{id}")
-    fun getCoffee(id: Long): Coffee {
+    fun getCoffee(@PathVariable id: Long): Coffee {
         return coffeeService.getCoffee(id)
     }
 

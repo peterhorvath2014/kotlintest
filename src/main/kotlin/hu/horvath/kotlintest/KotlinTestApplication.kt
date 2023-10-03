@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class KotlintestApplication
+class KotlinTestApplication
 
 fun main(args: Array<String>) {
-	runApplication<KotlintestApplication>(*args)
+    runApplication<KotlinTestApplication>(*args)
 }

@@ -16,7 +16,7 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean
 class AppConfig {
     @Bean
     @Primary
-    open fun objectMapper() = ObjectMapper().apply {
+    fun objectMapper() = ObjectMapper().apply {
         registerModule(KotlinModule.Builder().build())
     }
 

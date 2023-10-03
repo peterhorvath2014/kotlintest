@@ -1,16 +1,9 @@
 package hu.horvath.kotlintest.features.coffee
 
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
-class CoffeeService {
-    lateinit var coffeeRepository: CoffeeRepository
-
-    @Autowired
-    fun initialize(coffeeRepository: CoffeeRepository) {
-        this.coffeeRepository = coffeeRepository
-    }
+class CoffeeService(val coffeeRepository: CoffeeRepository) {
 
     fun getCoffee(coffeeId: Long): Coffee {
         return coffeeRepository.findById(coffeeId).get()

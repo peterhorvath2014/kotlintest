@@ -20,6 +20,11 @@ class CoffeeController {
         return coffeeService.getCoffees()
     }
 
+    @GetMapping("/{id}")
+    fun getCoffee(id: Long): Coffee {
+        return coffeeService.getCoffee(id)
+    }
+
     @PostMapping("/add")
     fun addCoffee(): Coffee {
         return coffeeService.addCoffee(Coffee(1, "Espresso", BigDecimal.valueOf(1.5)))

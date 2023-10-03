@@ -3,9 +3,9 @@ package hu.horvath.kotlintest.features.coffee
 import org.springframework.stereotype.Service
 
 @Service
-class CoffeeService(val coffeeRepository: CoffeeRepository) {
+class CoffeeService(private val coffeeRepository: CoffeeRepository) {
 
-    fun getCoffee(coffeeId: Long): Coffee {
+    fun getCoffee(coffeeId: String): Coffee {
         return coffeeRepository.findById(coffeeId).get()
     }
 

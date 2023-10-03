@@ -1,4 +1,4 @@
-package hu.horvath.kotlintest.features.inmemorydbtest
+package hu.horvath.kotlintest.features.coffee
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping

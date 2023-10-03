@@ -1,4 +1,4 @@
-package hu.horvath.kotlintest.features.inmemorydbtest
+package hu.horvath.kotlintest.features.coffee
 
 import org.springframework.data.annotation.Id
 import java.math.BigDecimal

@@ -1,4 +1,4 @@
-package hu.horvath.kotlintest.helloworld
+package hu.horvath.kotlintest.features.helloworld
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
